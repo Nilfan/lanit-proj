@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
+import { HashtagService } from './hashtag.service';
 
 import { AppComponent } from './app.component';
+import { HashtagFormComponent } from './hashtag-form/hashtag-form.component';
+import { HashtagListComponent } from './hashtag-list/hashtag-list.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HashtagFormComponent,
+    HashtagListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [HashtagService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,27 @@
+
+header{
+    width: 90%;
+    height: 60px;
+    padding-left: 50%;
+    padding-top: 15px;
+    background: rgb(162, 177, 211);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: solid 10px rgb(162, 177, 211);
+    margin-bottom: 3px;
+    input{
+        display: inline-block;
+        width: 300px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    button{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+}
+
+
+input.ng-touched.ng-invalid {border:solid red 2px;}
+input.ng-touched.ng-valid {border:solid green 2px;}

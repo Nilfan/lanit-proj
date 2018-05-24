@@ -1,0 +1,55 @@
+.card {
+  
+  width: 70%;
+  margin-top: 3px;
+  padding: 4px 5px;
+  border: solid skyblue 2px;
+  position: relative;
+  .card-header{
+    font-size: 1rem;
+    
+    div{
+      display: inline-block;
+    }
+    div:nth-child(2){
+      float: right;
+      margin-right: 25px;
+    }
+    i{
+      font-size: 2rem;
+      position:absolute;
+      top: 8.5px;
+      right:  10px; 
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.26);
+      user-select: none;
+      &:hover{
+        color: rgba(0, 0, 0, 0.54);
+      }
+    }
+  }
+  .card-body{
+    
+    .card-title{
+      padding: 3px;
+      padding-left: 8px;
+      font-size: 1.4em;
+      margin-bottom: 0;
+      
+    }
+  }  
+ 
+  
+}
+
+.material-icons.md-dark {
+  
+  }
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+  }
+
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); 
+ }
